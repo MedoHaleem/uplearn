@@ -1,3 +1,5 @@
+//Usually I will have additional test files for services but the route contains little to no logic aside from using
+//the scraper service so decided to include integration test for routes instead of unit test to avoid redundancy in testing
 describe("Routes: Fetch", () => {
    describe("GET fetch/query", () => {
        describe("status 200", () =>{
