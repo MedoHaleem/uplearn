@@ -40,3 +40,11 @@ exports.failUnprocessableEntity= (res, message = "Unprocessable Entity") => {
     })
 };
 
+exports.failGenericServerError = (res, message = "Unlisted Error, check the logs") => {
+    return res.status(500).json({
+        status : "error",
+        message : message
+    })
+};
+
+
